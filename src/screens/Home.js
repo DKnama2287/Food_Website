@@ -43,13 +43,13 @@ export default function Home() {
               </div>
             </div>
             <div className="carousel-item active" >
-              <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg" className="d-block w-100  " style={{ filter: "brightness(30%)" }} alt="..." />
+              <img src="https://cdn.pixabay.com/photo/2022/08/31/10/17/burger-7422970_640.jpg" className="d-block w-100  " style={{ filter: "brightness(30%)" }} alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="https://img.freepik.com/premium-photo/pizza-with-slice-missing-from-it-that-has-olives-it_1085346-166038.jpg" className="d-block w-100 " style={{ filter: "brightness(30%)" }} alt="..." />
+              <img src="https://img.freepik.com/free-photo/deep-fried-samosas-dumplings-gourmet-appetizer-generated-by-ai_188544-13491.jpg" className="d-block w-100 " style={{ filter: "brightness(30%)" }} alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="https://static.tnn.in/thumb/msid-114739433,thumbsize-1423744,width-225,height-400,resizemode-75/114739433.jpg?quality=100" className="d-block w-100 " style={{ filter: "brightness(30%)" }} alt="..." />
+              <img src="https://static.vecteezy.com/system/resources/previews/035/053/516/non_2x/ai-generated-background-veggie-vegan-food-zucchini-ai-generated-photo.jpg" className="d-block w-100 " style={{ filter: "brightness(30%)" }} alt="..." />
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
