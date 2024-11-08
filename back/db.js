@@ -3,7 +3,7 @@ const url = "mongodb://localhost:27017/gofood";
 
 mongoose.connect(url)
     .then(async () => {
-        console.log("Successfully connected to MongoDB");
+        console.log("Successfully connected to MongoDB database");
 
         try {
             const data = await mongoose.connection.db.collection("fooditems"); // corrected collection name
