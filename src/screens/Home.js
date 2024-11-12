@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Card from '../Components/card'
+import Card from '../Components/Card'
 // import Carousel from '../components/Carousel'
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
