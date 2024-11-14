@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import {  Link } from 'react-router-dom'
+import {  Link, useNavigate } from 'react-router-dom'
 import Navbar from "../Components/Navbar"
 export default function Signup() {
   const [credentials, setCredentials] = useState({ name: "", email: "", password: "", geolocation: "" })
   // let [address, setAddress] = useState("");
-  // let navigate = useNavigate()
+   let navigate = useNavigate();
 
   // const handleClick = async (e) => {
   //   e.preventDefault();
@@ -52,7 +52,8 @@ export default function Signup() {
     if (json.success) {
       //save the auth toke to local storage and redirect
        localStorage.setItem('token', json.authToken)
-       //navigate("/login")
+       navigate("/")
+       
 
     }
     else {

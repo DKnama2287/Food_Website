@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import Card from '../Components/Card'
 // import Carousel from '../components/Carousel'
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
+import Card from '../Components/Card'
 export default function Home() {
   const [foodCat, setFoodCat] = useState([])
   const [foodItems, setFoodItems] = useState([])

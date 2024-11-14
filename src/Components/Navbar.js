@@ -47,8 +47,8 @@ export default function Navbar() {
       </div>
       :      <div>
                    <div className="btn text-danger bg-white mx-2" onClick={()=>{setCartView(true)}}>
-                    my cart {" "}
-                    <Badge pill bg='danger'> {data.length} </Badge>
+                    my cart { (data.length !==0 ? <Badge pill bg='danger'> {data.length} </Badge> : " ")}
+                    
                    </div>
                    {cartView ? <Modal onClose={() => setCartView(false)}><Cart></Cart></Modal> : ""}
                    <div className="btn text-danger bg-white mx-2"  onClick={handleout}>logout</div>
