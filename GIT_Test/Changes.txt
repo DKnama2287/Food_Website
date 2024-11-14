@@ -1,3 +1,5 @@
 Purpose of this File is to test our understanding in GIT.
 Creating a Seperate folder "GIT_Test" of this purpose.
-here we learn how to do merge conflict
+
+Adding commit 2 to create a merge conflict. (Will be waiting for Durgesh to create a conflict)
+
