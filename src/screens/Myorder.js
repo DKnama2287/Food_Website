@@ -48,14 +48,15 @@ export default function MyOrder() {
                       .map((item) => {
                         return item.map((arrayData) => {
                           return (
-                            <div>
+                            <div id="demo" >
                               {arrayData.Order_date ? (
-                                <div className="m-auto mt-5">
+                                <div id="first"className="m-auto mt-5">
                                   {(data = arrayData.Order_date)}
                                   <hr />
                                 </div>
                               ) : (
-                                <div className="col-12 col-md-6 col-lg-3">
+                                <div id="second" className="col-12 col-md-6 col-lg-3">
+                                    <div className="col-12 col-md-6 col-lg-3">
                                   <div
                                     className="card mt-3"
                                     style={{
@@ -94,6 +95,8 @@ export default function MyOrder() {
                                     </div>
                                   </div>
                                 </div>
+                                </div>
+
                               )}
                             </div>
                           );
