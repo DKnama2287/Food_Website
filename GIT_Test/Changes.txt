@@ -3,3 +3,4 @@ Creating a Seperate folder "GIT_Test" of this purpose.
 
 Adding commit 2 to create a merge conflict. (Will be waiting for Durgesh to create a conflict)
 
+Creating a conflict with changes made by other members of the team. (Hello world)
