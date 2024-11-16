@@ -6,26 +6,32 @@ const CartDispatchContext = createContext();
 const reducer = (state, action) => {
     switch (action.type) {
         case "ADD":
-            return [...state, { id: action.id, name: action.name, qty: action.qty, size: action.size, price: action.price, img: action.img }]
+            return [...state, { id: action.id, name: action.name, qty: action.qty, size: action.size, price: action.price, img: action.img }];
+
         case "REMOVE":
-            let newArr = [...state]
-            newArr.splice(action.index, 1)
+            let newArr = [...state];
+            newArr.splice(action.index, 1);
             return newArr;
+
         case "DROP":
-            let empArray = []
-            return empArray
+            return [];
+
         case "UPDATE":
-            let arr = [...state]
-            arr.find((food, index) => {
-                if (food.id === action.id) {
-                    console.log(food.qty, parseInt(action.qty), action.price + food.price)
-                    arr[index] = { ...food, qty: parseInt(action.qty) + food.qty, price: action.price + food.price }
+            return state.map(item => {
+                if (item.id === action.id && item.size === action.size) {
+                    // Update quantity and price for the item with matching id and size
+                    return {
+                        ...item,
+                        qty: item.qty + parseInt(action.qty), // Increase the quantity
+                        price: item.price + action.price       // Update the price based on new addition
+                    };
                 }
-                return arr
-            })
-            return arr
+                return item; // Leave other items unchanged
+            });
+
         default:
             console.log("Error in Reducer");
+            return state;
     }
 };
 

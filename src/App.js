@@ -13,6 +13,7 @@ import {
 import Login from './screens/Login';
 import Signup from './screens/Signup';
 import { CartProvider } from './Components/ContextReducer.js';
+import Myorder from './screens/Myorder.js';
 function App() {
 
   useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
             <Route exact path="/" element={<Home/>} />
             <Route exact path="/Login" element={<Login/>} />
             <Route exact path="/createuser" element={<Signup/>} />
+            <Route exact path="/myorder" element={<Myorder/>} />
         </Routes>
        </div>
     </Router>

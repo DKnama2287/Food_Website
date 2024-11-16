@@ -1,14 +1,13 @@
 import React from 'react'
 import Delete from '@material-ui/icons/Delete'
 import { useCart, useDispatchCart } from '../Components/ContextReducer';
-// import trash from '../trash.svg'
 export default function Cart() {
   let data = useCart();
   let dispatch = useDispatchCart();
   if (data.length === 0) {
     return (
       <div>
-        <div className='m-5 w-100 text-center fs-3'>The Cart is Empty!</div>
+        <div className='m-5 w-100 text-white text-center fs-3'>The Cart is Empty !</div>
       </div>
     )
   }
@@ -20,23 +19,23 @@ export default function Cart() {
   const handleCheckOut = async () => {
     let userEmail = localStorage.getItem("userEmail");
     // console.log(data,localStorage.getItem("userEmail"),new Date())
-    let response = await fetch("http://localhost:5000/api/auth/orderData", {
+    let response = await fetch("http://localhost:5000/orderData", {
       // credentials: 'include',
       // Origin:"http://localhost:3000/login",
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
-      },
+    },
       body: JSON.stringify({
         order_data: data,
         email: userEmail,
         order_date: new Date().toDateString()
       })
-    });
-    console.log("JSON RESPONSE:::::", response.status)
+   });
+  //   console.log("JSON RESPONSE:::::", response.status)
     if (response.status === 200) {
       dispatch({ type: "DROP" })
-    }
+  }
   }
 
   let totalPrice = data.reduce((total, food) => total + food.price, 0)

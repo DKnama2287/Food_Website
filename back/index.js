@@ -20,6 +20,7 @@ app.use((req, res, next) => {
 app.use(express.json());
 app.use("/", require("./routes/auth"));
 app.use("/", require("./routes/Displaydata"));
+app.use("/", require("./routes/Orderdata"));
 
 app.listen(port, () => {
     console.log(`Server is started on port ${port}`);
