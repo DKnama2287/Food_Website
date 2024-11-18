@@ -23,7 +23,7 @@ export default function Navbar() {
 <nav className="navbar navbar-expand-lg navbar-dark position-sticky"
                 style={{ boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.15);", filter: 'blur(20)', backgroundColor:"#8B0000", position: "fixed", zIndex: "10", width: "100%" }}>
   <div className="container-fluid">
-    <Link className="navbar-brand fs-1 fst-italic" to="/">Go Food</Link>
+    <Link className="navbar-brand fs-1 fst-italic" to="/">Food  Station</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
