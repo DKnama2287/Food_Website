@@ -1,2 +1,0 @@
-I am creating this file so that on merging it with main branch files may conflict.
-here i am waiting for other members conflict 

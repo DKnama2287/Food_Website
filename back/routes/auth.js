@@ -37,15 +37,15 @@ router.post("/user",
     }
 })
 
-router.get("/user", async (req, res)=>{
+// router.get("/user", async (req, res)=>{
 
-    try {
-        res.send("hello guys");
-    } catch (error) {
-        console.log(error);
-        res.json({success : false});
-    }
-})
+//     try {
+//         res.send("hello guys");
+//     } catch (error) {
+//         console.log(error);
+//         res.json({success : false});
+//     }
+// })
 
 router.post('/login', [
     body('email', "Enter a Valid Email").isEmail(),

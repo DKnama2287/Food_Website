@@ -4,9 +4,15 @@ const port = 5000;
 
 require("./db");
 
+const cors = require('cors');
+app.use(cors());
+
+
 app.get("/", (req, res) => {
     res.send("hello");
 });
+
+
 
 app.use((req, res, next) => {
     res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");

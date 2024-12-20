@@ -1,0 +1,17 @@
+Functionalities of website => 
+1. Sign up option => to create a new account
+2. Sign in option => to login to your existing account 
+3. Search bar => to search the food items you want to buy
+4. Food category => to differentiate different food items
+5. My Orders => to see your past order history
+6. My Cart => lists all items you add to cart and displays the  total price
+7. Quantity Selection => allows user to select multiple quantity of a item
+8. Add to cart => adds items to your cart with specified quantity
+9. Logout => to bring you out of your account 
+
+Set up instructions =>
+ 
+1. first you install Node.js in your system
+2. then you should open two terminal (a) for frontend => go in main folder then run terminal and write  => npm start
+                                    (b)  for backend => go in back folder and then run terminal and write => npm run dev
+3. your set up done and website will start.
